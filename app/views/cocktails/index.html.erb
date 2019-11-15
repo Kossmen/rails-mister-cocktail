@@ -1,11 +1,16 @@
+<div class="banner" >
+  <%= cl_image_tag "adam-jaime-dmkmrNptMpw-unsplash_vqnsev" %>
+</div>
+<div class="container text-center">
 <h1>Cocktails</h1>
-<div class="FrontPage">
+
 <ul>
   <% @cocktails.each do |cocktail| %>
   <li><%= link_to cocktail.name, cocktail_path(cocktail)%></li>
 
   <% end%>
+
 </ul>
-</div>
 <%= link_to '+Add Cocktail', new_cocktail_path %>
+</div>
 
